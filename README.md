@@ -24,7 +24,7 @@ platform's primary package manager. For example, in Ubuntu 23.04 you
 could do the following instead of using `pip`:
 
 ```
-sudo apt install python3-breathe python3-recommonmark python3-sphinx-copybutton python3-sphinx-rtd-theme
+sudo apt install python3-breathe python3-recommonmark python3-sphinx-copybutton python3-sphinx-rtd-theme python3-jieba
 ```
 
 You must also install the `doxygen` documentation system. This is likely
