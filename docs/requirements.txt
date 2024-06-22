@@ -5,4 +5,4 @@ recommonmark
 breathe
 sphinx_rtd_theme>=0.5.1
 Jinja2
-jiaba>=0.42.1
+jiaba
