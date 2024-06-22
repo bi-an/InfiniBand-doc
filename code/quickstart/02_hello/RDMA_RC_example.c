@@ -3,6 +3,8 @@
 * gcc -Wall -I/usr/local/ofed/include -O2 -o RDMA_RC_example -L/usr/local/
 ofed/lib64 -L/usr/local/ofed/lib -libverbs RDMA_RC_example.c
 *
+* Usage:
+* RDMA_RC_example --help
 */
 /******************************************************************************
 *

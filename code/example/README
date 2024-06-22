@@ -1,9 +1,0 @@
-Build
-=====
-
-    make
-
-Usage
-=====
-
-    ./RDMA_RC_example --help
