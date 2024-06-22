@@ -12,10 +12,9 @@ Welcome to InfiniBand Learning notes!
 
    0_installing.rst
    1_overview.rst
-   1_1_section.rst
-   quickstart.rst
+   7_ibv_examples.rst
    glossary.rst
-   references.rst
+..   references.rst
 
 Indices and tables
 ==================
