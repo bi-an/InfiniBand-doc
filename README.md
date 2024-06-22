@@ -16,7 +16,7 @@ pip install sphinx-rtd-theme
 pip install sphinx_copybutton
 pip install recommonmark
 pip install breathe
-pip install jiaba
+pip install jieba
 ```
 
 Alternately, those required packages may also be avaible in your
