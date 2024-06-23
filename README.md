@@ -1,8 +1,13 @@
 <!-- TODO: build svg -->
 
-# InfiniBand Learning notes
+# InfiniBand Chinese Manual
 
-This is the InfiniBand notes I recorded during work and study.
+This repository contains a Sphinx-based documentation for the InfiniBand,
+as well as corresponding code examples.
+
+## Installation
+
+https://docs.nvidia.com/networking/display/mlnxofedv531001
 
 ## Build the documentation
 

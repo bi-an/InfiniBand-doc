@@ -1,7 +1,7 @@
-1 RDMA Architecture Overview
+2 RDMA 架构概览
 ============================
 
-1.1 InfiniBand
+2.1 InfiniBand
 --------------
 
 InfiniBand (IB) 是一种高速、低延迟、低 CPU 开销、高效且可扩展的服务器和存储互连技术。
@@ -13,7 +13,7 @@ InfiniBand 的关键功能之一是它支持本机远程直接内存访问 (RDMA
 领先的高性能计算、云、Web 2.0、存储、数据库和金融数据中心及应用程序的最佳性能和性价比
 互连解决方案。 InfiniBand 是一项标准技术，由 IBTA 组织定义和指定。
 
-1.2 Virtual Procotol Interconnect® (VPI)
+2.2 Virtual Procotol Interconnect® (VPI)
 ----------------------------------------
 
 Mellanox 虚拟协议互连 (VPI) 架构为支持 InfiniBand 和以太网语义的网络适配器和交换机之间
@@ -28,7 +28,7 @@ Mellanox 虚拟协议互连 (VPI) 架构为支持 InfiniBand 和以太网语义�
 
 基于 Mellanox 的 VPI 适配器和交换机同时支持 InfiniBand RDMA 和以太网 RoCE 解决方案。
 
-1.3 RMDA over Converged Ethernet (RoCE)
+2.3 RMDA over Converged Ethernet (RoCE)
 ---------------------------------------
 
 RoCE 是以太网上的 RDMA 标准，也是由 IBTA 组织定义和指定的。RoCE 为以太网提供了真正的 RDMA 语义，
@@ -37,7 +37,7 @@ RoCE 是以太网上的 RDMA 标准，也是由 IBTA 组织定义和指定的。
 RoCE 是目前最高效的低延迟以太网解决方案。它需要的 CPU 开销非常低，并利用数据中心桥接以太网中的
 优先级流量控制实现无损连接。自 OFED 1.5.1 发布以来，Open Fabrics 软件已完全支持 RoCE。
 
-1.4 RMDA技术比较
+2.4 RMDA技术比较
 ----------------
 
 目前，有三种技术支持 RDMA：InfiniBand、以太网 RoCE 和以太网 iWARP。这三种技术共享一个通用的用户
@@ -67,7 +67,7 @@ IB 使用的网络层具有一些特性，即使应用程序物理上位于不�
 拟内存之间直接传输消息。因此，最好将 IB 传输层与软件传输接口的组合视为 RDMA 消息传输服务。
 整个堆栈（包括软件传输接口）构成了 IB 消息服务。
 
-.. image:: images/1-1.png
+.. image:: images/2-1.png
    :width: 600
 
 最重要的一点是，每个应用程序都可以直接访问结构中设备的虚拟内存。这意味着应用程序无需向操作系统
@@ -76,7 +76,7 @@ IB 使用的网络层具有一些特性，即使应用程序物理上位于不�
 空间移动到网络堆栈上。同样，在另一端，应用程序必须依靠操作系统代表其检索网络上的数据并将其放置
 在其虚拟缓冲区空间中。
 
-.. image:: images/1-2.png
+.. image:: images/2-2.png
    :width: 600
 
 TCP/IP/以太网是一种面向字节流的传输方式，用于在套接字应用程序之间传递信息字节。TCP/IP 在设计上
@@ -92,7 +92,7 @@ TCP/IP/以太网是一种面向字节流的传输方式，用于在套接字应�
 知接收应用程序。因此，在整个消息传送到接收应用程序的缓冲区之前，发送应用程序和接收应用程序都无需
 参与。
 
-1.5 关键组件
+2.5 关键组件
 ------------
 
 这些只是在部署 IB 和 RoCE 的优势背景下提出的。我们不讨论电缆和连接器。
@@ -121,14 +121,14 @@ IB 交换机在概念上与标准网络交换机类似，但设计用于满足 I
 防止数据包丢失，并支持拥塞避免和自适应路由功能以及高级服务质量。许多交换机都包含子网管理器。配置 IB 
 结构至少需要一个子网管理器。
 
-1.6 支持现有应用程序和 ULP
+2.6 支持现有应用程序和 ULP
 ---------------------------
 
 IP 应用程序可使用 IP over IB (IPoIB) 或 Ethernet over IB (EoIB) 或 RDS ULP 在 InfiniBand 结构
 上运行。存储应用程序通过 iSER、SRP、RDS、NFS、ZFS、SMB 等获得支持。MPI 和 Network Direct 也都是受
 支持的 ULP，但不在本文档的讨论范围内。
 
-1.7 参考
+2.7 参考
 ----------
 
 - IBTA Intro to IB for End Users

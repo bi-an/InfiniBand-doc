@@ -10,7 +10,7 @@ import jieba
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'InfiniBand Learning'
+project = 'InfiniBand中文手册'
 copyright = '2024, bi-an'
 author = 'bi-an'
 release = '1.0'
