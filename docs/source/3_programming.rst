@@ -21,3 +21,4 @@ VPI 架构允许直接以用户模式访问硬件。Mellanox 提供动态加载�
    3_programming/3_1_operations.rst
    3_programming/3_2_transport.rst
    3_programming/3_3_concepts.rst
+   3_programming/3_4_application.rst

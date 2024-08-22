@@ -1,22 +1,6 @@
 1 词汇表
 ===========
 
-.. * `CQ` - Complete Queue 完成队列
-.. * `WQ` - Work Queue 工作队列
-.. * `WR` - Work Request 工作请求
-.. * `QP` - Queue Pairs 队列对（Send-Receive）
-.. * `SQ` - Send Queue 发送队列
-.. * `RQ` - Receive Queue 接收队列
-.. * `PD` - Protection Domain 保护域，将QP和MR结合在一起
-.. * `MR` - Memory Region 内存区域。一块经注册过的且本地网卡可以读写的内存区域。包含R_Key和L_Key。
-.. * `SGE` - Scatter/Gather Elements 分散/聚集元素。
-.. * `R_Key` - Remote Key
-.. * `L_Key` - Local Key
-.. * `CA` - (Host) Channel Adapter, an inifiniband network interface card.
-.. * `NIC` - Network Interface Card 网卡。
-.. * `LID` - Local Identifier.
-.. * `CM` - Connection Manager.
-
 .. csv-table::
     :header: "术语", "描述"
     :widths: 20,60
@@ -40,6 +24,6 @@
     和路由。"
     "GRH (Global Routing Header 全局路由头)", "用于跨子网边界传递数据包并用于传递多播消息的数据包头。此数据
     包头基于 IPv6 协议。"
-    "TODO"
+    "TODO",
 
-© Copyright 2023, NVIDIA. 最后更新于 2023 年 5 月 23 日。
+:IBA: InifinBand Architecture

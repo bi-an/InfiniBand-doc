@@ -10,8 +10,8 @@ ofed/lib64 -L/usr/local/ofed/lib -libverbs RDMA_RC_example.c
 *
 * RDMA Aware Networks Programming Example
 *
-* This code demonstrates how to perform the following operations using the *
-VPI Verbs API:
+* This code demonstrates how to perform the following operations using the
+* VPI Verbs API:
 *
 * Send
 * Receive
@@ -209,12 +209,10 @@ sock_connect_exit:
 * Description
 * Sync data across a socket. The indicated local data will be sent to the
 * remote. It will then wait for the remote to send its data back. It is
-* assumed that the two sides are in sync and call this function in the
-proper
+* assumed that the two sides are in sync and call this function in the proper
 * order. Chaos will ensue if they are not. :)
 *
-* Also note this is a blocking function and will wait for the full data to
-be
+* Also note this is a blocking function and will wait for the full data to be
 * received from the remote.
 *
 ******************************************************************************/
@@ -595,7 +593,7 @@ static int resources_create(struct resources *res)
         goto resources_create_exit;
     }
     fprintf(stdout,
-            "MR was registered with addr=%p, lkey=0x%x, rkey=0x%x, flags = 0x%x\n",
+            "MR was registered with addr=%p, lkey=0x%x, rkey=0x%x, flags=0x%x\n",
             res->buf, res->mr->lkey, res->mr->rkey, mr_flags);
     /* create the Queue Pair */
     memset(&qp_init_attr, 0, sizeof(qp_init_attr));

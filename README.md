@@ -60,3 +60,8 @@ make html
 3. [Sections](https://documatt.com/restructuredtext-reference/element/section.html)
 4. [Sections](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#sections)
 5. [中文配置问题](https://iridescent.ink/HowToMakeDocs/Basic/Sphinx.html#secchinesesearchproblem)
+6. [在 WSL 上显示 html 页面](https://www.reddit.com/r/bashonubuntuonwindows/comments/8teo9i/is_there_a_way_to_open_a_file_in_a_browser_from/)：
+
+    ```bash
+    explorer.exe index.html
+    ```

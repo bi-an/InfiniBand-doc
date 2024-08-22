@@ -8,10 +8,24 @@
 
 这是《RDMA感知网络编程用户手册》的中文翻译。
 
-英文手册来源：`RDMA Aware Networks Programming User Manual v1.7`_
+英文手册来源：
+`RDMA Aware Networks Programming User Manual v1.7
+<https://docs.nvidia.com/networking/display/rdmaawareprogrammingv17>`_
 
-.. _RDMA Aware Networks Programming User Manual v1.7:
-   https://docs.nvidia.com/networking/display/rdmaawareprogrammingv17
+在一些重要概念上，参考了以下文档：
+
+- `InfiniBandTM Architecture, Specification Volume 1, Release 1.2.1
+  <https://www.afs.enea.it/asantoro/V1r1_2_1.Release_12062007.pdf>`_
+- `Introduction to InfiniBand™ for End Users
+  <https://network.nvidia.com/pdf/whitepapers/Intro_to_IB_for_End_Users.pdf>`_
+- `InfiniBand Software Architecture and RDMA
+  <https://www.snia.org/sites/default/files/files2/files2/SDC2013/presentations/Hardware/DavidDeming_IBA_Software_RDMA.pdf>`_
+
+推荐参考博客：
+
+- `RDMAmojo <http://www.rdmamojo.com/>`_
+- `RDMA Tutorial <https://github.com/jcxue/RDMA-Tutorial/wiki>`_
+
 
 .. toctree::
    :maxdepth: 2
