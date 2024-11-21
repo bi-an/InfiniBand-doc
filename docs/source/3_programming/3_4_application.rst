@@ -71,7 +71,7 @@
 
    示例实现:
    :code:`post_send` 和
-   ::code::`poll_completion`
+   ::code:`poll_completion`
 
 #. Cleanup；
 
