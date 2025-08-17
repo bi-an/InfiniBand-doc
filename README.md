@@ -9,6 +9,53 @@ as well as corresponding code examples.
 
 https://docs.nvidia.com/networking/display/mlnxofedv531001
 
+[Sphinx 入门教程](https://sphinx-chinese-tutorial.readthedocs.io/en/latest/)
+
+托管到 https://readthedocs.org/ ，不需要把构建内容上传到 github ，readthedocs 会自动构建。
+
+将环境依赖写入 requirements.txt
+
+方法一：使用虚拟环境
+
+1. 使用虚拟环境
+
+创建一个虚拟环境来管理你的项目依赖。虚拟环境只会列出该环境内安装的包，而不会包括全局包。
+
+```bash
+# 创建虚拟环境
+python -m venv venv
+# 激活虚拟环境
+source venv/bin/activate
+```
+
+2. 在虚拟环境中安装项目依赖
+
+```bash
+pip install package-name
+```
+
+3. 运行 pip freeze 生成 requirements.txt：
+
+```bash
+pip freeze > requirements.txt
+```
+
+方法二：使用 pipreqs
+
+pipreqs 是一个工具，它会扫描项目目录，自动生成 requirements.txt，并且只会将当前项目中实际用到的包列出，而不会包括你没有直接使用的包。
+
+1. 安装 `pipreqs`
+
+```bash
+pip install pipreqs
+```
+
+2. 在项目目录中运行 `pipreqs`
+
+```bash
+pipreqs /path/to/your/project
+```
+
 ## Build the documentation
 
 To build and/or contribute to this documentation, you must have a Sphinx and
